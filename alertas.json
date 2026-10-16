@@ -1,0 +1,602 @@
+[
+    {
+        "persona": "Carlos",
+        "total": 323287,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:02:22"
+    },
+    {
+        "persona": "Pedro",
+        "total": 648304,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:02:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 450155,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:02:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 671889,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:02:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 450445,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:02:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 771290,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:08"
+    },
+    {
+        "persona": "Ana",
+        "total": 539989,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:08"
+    },
+    {
+        "persona": "Laura",
+        "total": 761496,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:08"
+    },
+    {
+        "persona": "Carlos",
+        "total": 497065,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:08"
+    },
+    {
+        "persona": "Pedro",
+        "total": 849518,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:36"
+    },
+    {
+        "persona": "Ana",
+        "total": 676648,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:36"
+    },
+    {
+        "persona": "Laura",
+        "total": 771737,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:36"
+    },
+    {
+        "persona": "Carlos",
+        "total": 617383,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:36"
+    },
+    {
+        "persona": "Pedro",
+        "total": 894561,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:58"
+    },
+    {
+        "persona": "Ana",
+        "total": 735689,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:58"
+    },
+    {
+        "persona": "Laura",
+        "total": 853764,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:58"
+    },
+    {
+        "persona": "Carlos",
+        "total": 806557,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:03:58"
+    },
+    {
+        "persona": "Pedro",
+        "total": 968136,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:18"
+    },
+    {
+        "persona": "Ana",
+        "total": 835718,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:18"
+    },
+    {
+        "persona": "Laura",
+        "total": 883706,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:18"
+    },
+    {
+        "persona": "Carlos",
+        "total": 888799,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:18"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1017350,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:37"
+    },
+    {
+        "persona": "Ana",
+        "total": 873293,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:37"
+    },
+    {
+        "persona": "Laura",
+        "total": 1035643,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:37"
+    },
+    {
+        "persona": "Carlos",
+        "total": 992920,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:04:37"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1057654,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:05:02"
+    },
+    {
+        "persona": "Ana",
+        "total": 982620,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:05:02"
+    },
+    {
+        "persona": "Laura",
+        "total": 1065299,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:05:02"
+    },
+    {
+        "persona": "Carlos",
+        "total": 1065154,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:05:02"
+    },
+    {
+        "persona": "Carlos",
+        "total": 656169,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 2261783,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 303043,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2284040,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 1945484,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2106788,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2073022,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 618620,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 2304724,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2016920,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2414832,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 2228102,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2486984,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 2127678,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 944599,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 125680,
+        "riesgo": "BAJO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2480084,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1818074,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2535575,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 1827502,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2157688,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 2138606,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 2456412,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 780578,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 2433826,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1859113,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2261339,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1119554,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 791640,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 1961580,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 1865779,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1930661,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 520346,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 1997537,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 2147414,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 2466233,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 1167259,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 702628,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2788052,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 1175916,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Pedro",
+        "total": 151402,
+        "riesgo": "BAJO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 1796413,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 2257717,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 616572,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2114895,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 2557475,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 2464118,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Laura",
+        "total": 1875234,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 2414228,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 1171405,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Ana",
+        "total": 1845189,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:41:45"
+    },
+    {
+        "persona": "Carlos",
+        "total": 650100,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:42:31"
+    },
+    {
+        "persona": "Ana",
+        "total": 225939,
+        "riesgo": "MEDIO",
+        "fecha": "2026-10-15 20:42:31"
+    },
+    {
+        "persona": "Pedro",
+        "total": 358360,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:42:31"
+    },
+    {
+        "persona": "Laura",
+        "total": 287818,
+        "riesgo": "MEDIO",
+        "fecha": "2026-10-15 20:42:31"
+    },
+    {
+        "persona": "Carlos",
+        "total": 788465,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:00"
+    },
+    {
+        "persona": "Ana",
+        "total": 393154,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:00"
+    },
+    {
+        "persona": "Pedro",
+        "total": 449649,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:00"
+    },
+    {
+        "persona": "Laura",
+        "total": 511294,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:00"
+    },
+    {
+        "persona": "Carlos",
+        "total": 867579,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:20"
+    },
+    {
+        "persona": "Ana",
+        "total": 410439,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:20"
+    },
+    {
+        "persona": "Pedro",
+        "total": 629189,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:20"
+    },
+    {
+        "persona": "Laura",
+        "total": 585678,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:20"
+    },
+    {
+        "persona": "Carlos",
+        "total": 906112,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:41"
+    },
+    {
+        "persona": "Ana",
+        "total": 489691,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:41"
+    },
+    {
+        "persona": "Pedro",
+        "total": 702601,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:41"
+    },
+    {
+        "persona": "Laura",
+        "total": 663022,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:43:41"
+    },
+    {
+        "persona": "Carlos",
+        "total": 1014039,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:44:21"
+    },
+    {
+        "persona": "Ana",
+        "total": 521226,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:44:21"
+    },
+    {
+        "persona": "Pedro",
+        "total": 787255,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:44:21"
+    },
+    {
+        "persona": "Laura",
+        "total": 735875,
+        "riesgo": "ALTO",
+        "fecha": "2026-10-15 20:44:21"
+    }
+]

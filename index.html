@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Detector de Fraudes en Tiempo Real
+    </title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #f4f6f8;
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            color: #2c3e50;
+
+        }
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+
+            gap: 15px;
+
+            margin-top: 30px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .card {
+
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0px 2px 6px rgba(0,0,0,.15);
+
+            text-align: center;
+
+        }
+
+        .card h3 {
+
+            margin: 0;
+
+            color: #666;
+
+        }
+
+        .card p {
+
+            font-size: 30px;
+
+            font-weight: bold;
+
+            margin: 10px 0 0 0;
+
+        }
+
+        .alto {
+
+            color: #e74c3c;
+
+        }
+
+        .medio {
+
+            color: #f39c12;
+
+        }
+
+        .bajo {
+
+            color: #27ae60;
+
+        }
+
+        .panel {
+
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0px 2px 6px rgba(0,0,0,.15);
+
+        }
+
+        table {
+
+            width: 100%;
+
+            border-collapse: collapse;
+
+        }
+
+        th, td {
+
+            padding: 12px;
+
+            border-bottom:
+                1px solid #ddd;
+
+            text-align: center;
+
+        }
+
+        th {
+
+            background: #34495e;
+
+            color: white;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        Detector de Fraudes con Kafka y Spark
+    </h1>
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>Total Alertas</h3>
+
+            <p id="totalAlertas">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Riesgo Alto</h3>
+
+            <p
+                id="riesgoAlto"
+                class="alto">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Riesgo Medio</h3>
+
+            <p
+                id="riesgoMedio"
+                class="medio">
+
+                0
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Riesgo Bajo</h3>
+
+            <p
+                id="riesgoBajo"
+                class="bajo">
+
+                0
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <h2>
+            Alertas Detectadas
+        </h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Fecha</th>
+
+                    <th>Persona</th>
+
+                    <th>Total</th>
+
+                    <th>Riesgo</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaAlertas">
+
+                <tr>
+
+                    <td colspan="4">
+
+                        Esperando alertas...
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <script>
+
+        console.log(
+            "Dashboard cargado"
+        );
+
+        async function cargarResumen() {
+
+            try {
+
+                const respuesta =
+                    await fetch(
+                        "/api/resumen"
+                    );
+
+                const datos =
+                    await respuesta.json();
+
+                console.log(
+                    "Resumen:",
+                    datos
+                );
+
+                document.getElementById(
+                    "totalAlertas"
+                ).textContent =
+                    datos.total_alertas;
+
+                document.getElementById(
+                    "riesgoAlto"
+                ).textContent =
+                    datos.riesgo_alto;
+
+                document.getElementById(
+                    "riesgoMedio"
+                ).textContent =
+                    datos.riesgo_medio;
+
+                document.getElementById(
+                    "riesgoBajo"
+                ).textContent =
+                    datos.riesgo_bajo;
+
+            }
+
+            catch(error) {
+
+                console.error(
+                    "Error resumen:",
+                    error
+                );
+
+            }
+
+        }
+
+        async function cargarAlertas() {
+
+            try {
+
+                const respuesta =
+                    await fetch(
+                        "/api/alertas"
+                    );
+
+                const alertas =
+                    await respuesta.json();
+
+                console.log(
+                    "Alertas:",
+                    alertas
+                );
+
+                let html = "";
+
+                if(
+                    alertas.length === 0
+                ) {
+
+                    html = `
+                    <tr>
+                        <td colspan="4">
+                            Sin alertas
+                        </td>
+                    </tr>
+                    `;
+
+                }
+
+                else {
+
+                    alertas
+                    .slice()
+                    .reverse()
+                    .forEach(alerta => {
+
+                        html += `
+                        <tr>
+                            <td>${alerta.fecha}</td>
+                            <td>${alerta.persona}</td>
+                            <td>$${Number(
+                                alerta.total
+                            ).toLocaleString()}</td>
+                            <td>${alerta.riesgo}</td>
+                        </tr>
+                        `;
+
+                    });
+
+                }
+
+                document
+                .getElementById(
+                    "tablaAlertas"
+                )
+                .innerHTML =
+                    html;
+
+            }
+
+            catch(error) {
+
+                console.error(
+                    "Error alertas:",
+                    error
+                );
+
+            }
+
+        }
+
+        async function actualizar() {
+
+            await cargarResumen();
+
+            await cargarAlertas();
+
+        }
+
+        actualizar();
+
+        setInterval(
+            actualizar,
+            3000
+        );
+
+    </script>
+
+    <script>
+
+        async function cargarResumen() {
+            
+            const respuesta =
+            await fetch(
+                "/api/resumen"
+            );
+
+            const datos=
+            await respuesta.json();
+
+            document.getElementById(
+                "totalAlertas"
+            ).textContent =
+            datos.total_alertas;
+
+            document.getElementById(
+                "riesgoAlto"
+            ).textContent =
+                datos.riesgo_alto;
+
+            document.getElementById(
+                "riesgoMedio"
+            ).textContent =
+                datos.riesgo_medio;
+            
+            document.getElementById(
+                "riesgoBajo"
+            ).textContent =
+                datos.riesgo_bajo;
+        }
+
+        async function cargarAlertas() {
+
+            const respuesta =
+                await fetch(
+                    "/api/alertas"
+                );
+
+            const alertas =
+                await respuesta.json();
+
+            const tabla =
+                document.getElementById(
+                    "tablaAlertas"
+                );
+            
+            if(alertas.length === 0) {
+
+                tabla.innerHTML = `
+                <tr>
+                    <td colspan="4">
+                        Sin alertas
+                    </td>
+                </tr>
+                `;
+
+                return;
+            }
+
+            tabla.innerHTML = "";
+
+            alertas
+                .slice()
+                .reverse()
+                .forEach(alerta => {
+
+                tabla.innerHTML += `
+                <tr>
+
+                    <td>${alerta.fecha}</td>
+
+                    <td>${alerta.persona}</td>
+
+                    <td>
+                        $${Number(
+                            alerta.total
+                        ).toLocaleString()}
+                    </td>
+
+                    <td>${alerta.riesgo}</td>
+                
+                </tr>
+                `;
+            });
+        }
+
+        async function actualizarDashboard() {
+
+            await cargarResumen();
+
+            await cargarAlertas();
+        
+        }
+
+        actualizarDashboard();
+
+        setInterval(
+            actualizarDashboard,
+            3000
+    );
+
+    
+    </script>
+
+</body>
+
+</html>
