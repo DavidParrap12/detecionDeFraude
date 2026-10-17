@@ -40,12 +40,13 @@ try:
         metadata = future.get(timeout=10)
 
         print(
-            f"Mensaje enviado a {metadata.topic}"
+            f"Mensaje enviado a {metadata.topic}",
+            flush=True
         )
 
         productor.flush()
 
-        print("Transacción enviada:", transaccion)
+        print("Transacción enviada:", transaccion, flush=True)
         time.sleep(2)
 
 except KeyboardInterrupt:
