@@ -1,6 +1,17 @@
 import json
 import os
+import sys
+
+if "HADOOP_HOME" not in os.environ:
+    os.environ["HADOOP_HOME"] = r"C:\hadoop"
+if r"C:\hadoop\bin" not in os.environ.get("PATH", ""):
+    os.environ["PATH"] = r"C:\hadoop\bin;" + os.environ.get("PATH", "")
+
 from datetime import datetime
+
+import database
+
+database.inicializar_db()
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import (
@@ -200,6 +211,12 @@ Fecha: {alerta['fecha']}
             ensure_ascii=False,
             indent=4
         )
+
+    # Guardar en base de datos SQLite
+    try:
+        database.guardar_alertas_lote(alertas_nuevas)
+    except Exception as e:
+        print(f"Error al guardar alertas en base de datos: {e}")
 
 # ==========================
 # STREAMING
